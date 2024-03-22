@@ -3,7 +3,7 @@ body{
   margin: 0;
   padding: 0;
   text-align: center;
-  background-image: url("bg.jpg");
+  background-image: url("../public/bg.jpg");
   filter: brightness(140%);
   font-family: "Istok Web", sans-serif;
 
