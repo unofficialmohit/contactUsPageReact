@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Flow+Block&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-image: url("bg.jpg");
+  filter: brightness(140%);
+  font-family: "Istok Web", sans-serif;
+
+}
+form{
+  width: 90%;
+  margin-inline: 2%;
+  margin-block: 2%;
+  height: 100%;
+  padding: 40px;
+}
+.contact--detail{
+  display: flex;
+  padding-left: 15%;
+  width: 70%;
+  justify-content: space-between;
+}
+.phone,.email{
+  width: 45%;
+  
+}
+.country{
+  display: flex;
+  border:1px solid white;
+  align-items: center;
+  color:white
+}
+.country>h3{
+  margin-right: 2px;
+}
+.phone>label,.email>label{
+  padding-left: 0;
+}
+#fullname{
+  width:70%
+}
+#phone{
+  border: 0px;
+}
+label {
+  padding-left: 15%;
+  display: block;
+  text-align: left;
+  font-size: larger;
+  margin: 5px;
+  color: white;
+  font-weight: 800;
+  }
+
+  input[type=text],input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: large;
+  }
+  input[type=email]
+  {
+    margin: 0px;
+
+    height: 65px;
+  }
+ textarea{
+  border: 1px solid white;
+  background: transparent;
+    max-width: 69%;
+    width: 100%;
+    min-height: 200px;
+    color: white;
+    font-size: large;
+    padding: 5px;
+  }
+  .btnDiv{
+    padding-top: 3%;
+    padding-left: 15%;
+    width: 100%;
+    text-align: left;
+  }
+  .btn{
+    width: 40%;
+    height: 60px;
+    background-color: red;
+    color: white;
+    font-size: large;
+    font-weight: 300;
+  }
+  .title{
+    color: white;
+  }
+  img{
+    width: 30px;
+    height: 30px;
+    margin-inline: 5px;
+  }
