@@ -4,10 +4,38 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>Contact Us</title>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script>function detectDevice() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  
+      // Windows users
+      if (/windows phone/i.test(userAgent)) {
+          return "Windows Mobile";
+      }
+  
+      // Android users
+      if (/android/i.test(userAgent)) {
+          return "Android";
+      }
+  
+      // iOS users
+      if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+          return "iOS";
+      }
+  
+      // If none of the above, return "PC"
+      return "PC";
+  }
+  
+  // Display error message if not on PC
+  if (detectDevice() !== "PC") {
+      document.querySelector('body').outerHTML = "This site will only work on a PC.";
+  }</script>
+  <script type="module" src="/src/main.jsx"></script>
+
   </body>
 </html>
